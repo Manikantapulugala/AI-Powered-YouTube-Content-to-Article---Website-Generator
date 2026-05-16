@@ -19,6 +19,8 @@ import re
 
 load_dotenv()
 
+GEMINI_API_KEY = st.secrets["gemini_key"]
+
 os.environ["GEMINI_API_KEY"] = os.getenv("gemini_key")
 
 llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash-lite")
